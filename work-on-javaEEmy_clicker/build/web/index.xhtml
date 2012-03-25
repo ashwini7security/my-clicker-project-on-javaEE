@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+        <title>Login</title>
+    </h:head>
+    <body background="bg.jpg">
+        <div style="	padding-left:190px;
+	padding-right:180px;
+	padding-top:20px;
+	padding-bottom:20px;
+	margin:100px;
+	color:#CCCCCC;
+	min-height:300px;
+	min-width:550px;">
+		<div style="	padding:10px;
+	min-height:300px;
+	min-width:350px;
+">
+			<div style="
+	color:#000000;
+	min-width:320px;
+	float:left;
+	min-height:250px;">
+			<img align="center" src="pic.png" alt="No" width="200" height="200"/>
+			<br/>
+			Welcome to Twitter.<br/>
+Find out what’s happening, right now,<br/> with the people and organizations you care about.
+
+			</div>
+			<div style="min-width:390px;
+	float:right;
+        background-color:#BBDDFF;
+	color:black;
+	min-height:260px;
+">
+				
+				
+		<p align="center"><font size="5" color="black">Sign in</font></p><hr/>
+                <h:form>
+		    <table align="center" width="320" cellspacing="10">
+                     <tr><font color="black">
+                        <td>Username</td>
+                        <td><h:inputText id="check_username" maxlength="30"  value="#{register_managed.check_username}"></h:inputText><br/></td></font>
+                      </tr> 
+                      <tr><font color="black">
+                        <td>Password</td>
+                        <td><h:inputSecret id="check_password" maxlength="30" value="#{register_managed.check_password}"></h:inputSecret> <br/></td></font>
+                      </tr>
+                      <tr align="center"><font color="black">
+                        <td colspan="2" align="center"><h:commandButton value="Login" action="#{register_managed.check_userlogin()}" /> 
+                    </td></font>
+                          </tr>
+                                   <tr align="center"><font color="black">
+                        <td colspan="2" >
+                          <h:outputText id="outputmessage" value=""></h:outputText> 
+                              </td></font>
+                      </tr>
+                    </table>
+		
+	</h:form>	
+                        <div>
+                            <p align="center"> <a href="nya_user.xhtml" >Click here To Register with Clicker </a></p>
+
+        </div>
+
+        </div>
+		</div>
+	</div>
+    </body>
+              </html>

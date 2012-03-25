@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      >
+    <h:head>
+        <title> nye user ka sign up</title>
+    </h:head>
+    
+    
+    <body background="bg.jpg">
+        	<div style="	padding-left:100px;
+	padding-right:100px;
+	padding-top:20px;
+	padding-bottom:20px;
+	margin:100px;
+	color:#CCCCCC;
+	min-height:380px;
+	min-width:900px;">
+		<div style="	padding:10px;
+	min-height:380px;
+	min-width:900px;
+">
+			<div style="background-color:white;
+	color:#000000;
+	min-width:440px;
+	float:left;
+	min-height:380px;">
+			<img src="contact.jpg" alt="No" width="400" height="300"/>
+			<br/>
+			Welcome to Clicker.<br/>
+
+
+			</div>
+			<div style="min-width:450px;
+	float:right;
+        background-color:white;
+	color:black;
+	min-height:380px;
+">			
+                            <a href="index.xhtml"> Login Now ! </a>
+		<p align="center"><font size="5" color="black"> New to Twitter ? Sign up</font></p><hr />
+                <h:form>
+		    <table align="center" width="400" cellspacing="10">
+                     <tr><font color="black">
+                        <td>First name</td>
+                        <td><h:inputText id="firstname" maxlength="30" value="#{register_managed.firstname}"></h:inputText></td></font>
+                      </tr>
+                      <tr><font color="black">
+                        <td>Last name</td>
+                        <td><h:inputText id="lastname" maxlength="30" value="#{register_managed.lastname}"></h:inputText> </td></font>
+                      </tr>
+                           <tr><font color="black">
+                        <td>Username</td>
+                        <td><h:inputText id="username" maxlength="30" value="#{register_managed.username}"></h:inputText> </td></font>
+                      </tr> 
+                      <tr><font color="black">
+                        <td>Email ID</td>
+                        <td><h:inputText id="emailid" maxlength="30" value="#{register_managed.emailid}"></h:inputText>@gmail.com </td></font>
+                      </tr>
+                      <tr><font color="black">
+                        <td>Password</td>
+                        <td><h:inputSecret id="password" maxlength="30" value="#{register_managed.password}"></h:inputSecret> </td></font>
+                      </tr>
+                      <tr align="center"><font color="black">
+                        <td colspan="2" >  <h:commandButton label="lsubmit" value="register" actionListener="#{register_managed.register_pass()}"  ></h:commandButton>
+                    </td></font>
+                      </tr>
+                    </table>
+		
+	</h:form>	
+        </div>
+
+		</div>
+	</div>
+ 
+        
+    </body>
+</html>

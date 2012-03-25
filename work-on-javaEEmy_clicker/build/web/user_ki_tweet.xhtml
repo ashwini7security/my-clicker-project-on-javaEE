@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html  xmlns="http://www.w3.org/1999/xhtml"
+       xmlns:h="http://java.sun.com/jsf/html"
+       xmlns:f="http://www.w3.org/1999/xhtml">
+    <h:head>
+        <title>TODO supply a title</title>
+    </h:head>
+    <body background="bg.jpg">
+
+        <div>
+            <div id="header">
+                <h1>Start Tweeting  Here!</h1>
+            </div>
+        </div>
+        <div id="menu"  >
+                <ul>
+                    <li><a href="user_profile.xhtml" >Profile</a></li>
+                    <li><a href="user_tweet.xhtml" >New Tweet</a></li>
+                    
+                </ul>
+            </div>
+        <div align="center">
+                <h2>Compose your tweets here...</h2>
+                <h:form>
+                <h:inputTextarea label="tweets" title="Tweet here Now" cols="80" rows="4" value="#{tweetbean.tweet}"> </h:inputTextarea><br/>
+                <label><h:commandButton value="Tweet" actionListener="#{tweetbean.post()}">
+                </h:commandButton></label>
+                <a href="index.xhtml"> Logout </a>
+                </h:form>
+            </div>
+        
+            <h:dataTable id="dt1" value="#{tweetbean.listall()}" var="item" bgcolor="#F1F1F1" border="10" cellpadding="5" cellspacing="3" rows="15" width="50%" dir="LTR" frame="hsides" rules="all">
+           
+            <h:column>
+            <f:facet name="header">
+                <h:outputText value="Tweets" />
+            </f:facet>
+                <h:outputText style="" value="#{item.tweet}" ></h:outputText>
+            </h:column>
+           
+</h:dataTable>
+    </body>
+</html>

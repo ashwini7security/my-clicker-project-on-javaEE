@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html  xmlns="http://www.w3.org/1999/xhtml"
+       xmlns:h="http://java.sun.com/jsf/html"
+       xmlns:f="http://www.w3.org/1999/xhtml">
+    <h:head>
+        <title>TODO supply a title</title>
+    </h:head>
+    <body background="bg.jpg">
+
+        <div>
+            <div id="header">
+                <h1>Start Tweeting  Here!</h1>  <a href="user_home.xhtml" > Go to Home page </a>
+            </div>
+        </div>
+        <div id="menu"  >
+            <ul>
+                <li><a href="user_profile.xhtml" >Profile</a></li>
+                <li><a href="user_tweet.xhtml" >New Tweet</a></li>
+
+            </ul>
+        </div>
+        <div align="center">
+            <h2>Compose your tweets here...</h2> 
+            <h:form>
+                <h:inputTextarea label="tweets" title="Tweet here Now" cols="80" rows="4" > </h:inputTextarea><br/>
+                <label><h:commandButton value="Tweet">
+                    </h:commandButton></label>
+            </h:form>
+        </div>
+
+    </body>
+</html>

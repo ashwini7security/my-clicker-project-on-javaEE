@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene Scope="Project" version="2">
+    <Scope Scope="Faces Configuration Only"/>
+    <Scope Scope="Project">
+        <Node id="nya_user.xhtml" x="266" y="310" zoom="true"/>
+        <Node id="user_ki_tweet.xhtml" x="-121" y="413" zoom="true"/>
+        <Node id="index.xhtml" x="79" y="123" zoom="false"/>
+        <Node id="user_ki_profile.xhtml" x="251" y="408" zoom="true"/>
+        <Node id="user_ka_home.xhtml" x="5" y="306" zoom="true"/>
+    </Scope>
+    <Scope Scope="All Faces Configurations"/>
+</Scene>
